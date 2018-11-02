@@ -11,6 +11,8 @@ Router.map(function() {
   this.route('contact');
   this.route('rentals', function() {
     this.route('show', { path: '/:rental_id' });
+    this.route('new');
+    this.route('edit', { path: '/:rental_id'});
   });
 });
 
