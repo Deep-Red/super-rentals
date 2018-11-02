@@ -1,1 +1,21 @@
-{{outlet}}
+<div class="jumbo show-listing">
+  <h2 class="title">{{model.title}}</h2>
+  <div class="right detail-section">
+    <div class="detail owner">
+      <strong>Owner:</strong> {{input placeholder=(get model.owner)}}
+    </div>
+    <div class="detail">
+      <strong>Type:</strong> {{input placeholder=(get model.category)}}
+    </div>
+    <div class="detail">
+      <strong>Location:</strong> {{input placeholder=(get model.city)}}
+    </div>
+    <div class="detail">
+      <strong>Number of bedrooms:</strong> {{input placeholder=(get model.bedrooms)}}
+    </div>
+    <div class="detail">
+      <strong>Description:</strong>{{input placeholder=(get model.description) type=textarea}}
+    </div>
+  </div>
+  <img src="{{model.image}}" class="rental-pic">
+</div>
