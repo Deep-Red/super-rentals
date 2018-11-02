@@ -4,7 +4,7 @@
 `ember-cli-mirage` has been disabled.
 To run the app you will need to also run the app at https://github.com/Deep-Red/CCSEInboxHealth.
 * Start the Rails server for the CCSEInboxHealth app, `rails s`
-* Run `ember s --proxy http://localhost:3000` (or whichever port the Rails server is listening to).
+* Run `GOOGLE_MAPS_API_KEY=<your api key> ember s --proxy http://localhost:3000` (or whichever port the Rails server is listening to).
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 
